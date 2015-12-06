@@ -170,7 +170,7 @@ lockKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     [ ((modm,               xK_s     ), spawn "xscreensaver-command --lock") ]
 
-myKeys = browserKeys <+> lockKeys <+> volumeKeys <+> virtKeys <+> xmonadKeys
+myKeys = lockKeys
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.

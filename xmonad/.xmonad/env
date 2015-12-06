@@ -6,4 +6,4 @@
 #feh --no-xinerama --bg-fill /path/to/image.png
 
 # Lock the damn screen
-xscreensaver-command --locak
+xscreensaver-command --lock
