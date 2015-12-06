@@ -1,0 +1,14 @@
+Config { font = "xft:Consolas:bold:size=12"
+     , bgColor = "black"  
+     , fgColor = "grey"  
+     , position = Static { xpos = 0 , ypos = 0, width = 3840, height = 24 }  
+     , sepChar = "%"  
+     , commands = [ Run Uptime [] 10
+	  , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10  
+          , Run Memory ["-t","Mem: <usedratio>%"] 10  
+          , Run Date "%a %b %_d %l:%M" "date" 10  
+          , Run StdinReader  
+     ]  
+     , alignSep = "}{"  
+     , template = "%StdinReader%} {<fc=blue>%uptime%</fc> ~ <fc=green>%cpu% ~ %memory% ~ %br0%</fc> ~ <fc=#ee9a00>%date%</fc>"
+     }  
