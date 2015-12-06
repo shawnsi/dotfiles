@@ -1,2 +1,5 @@
 Xcursor.theme: Neutral
 Xcursor.size: 0
+
+URxvt.cursorBlink: 1
+URxvt.cursorUnderline: 1
