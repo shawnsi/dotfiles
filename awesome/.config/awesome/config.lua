@@ -17,7 +17,6 @@ tag_count		= 4
 tag_icon 		= "◊"
 tag_icon_active = "◆"
 clock_format 	= " %a %m/%d %H:%M " -- http://linux.die.net/man/3/strftime
-battery_id 		= "BAT1"
 sloppy_focus 	= false
 
 -- █▓▒░ preffered apps
@@ -40,7 +39,7 @@ volumecontrol 	= terminal.. " -T sound -e alsamixer"
 irc 			= terminal.." -T weechat -e weechat-curses"
 iptraf 			= terminal.." -g -e sudo iptraf-ng -i all"
 burner 			= "xfburn"
-webgui 			= "chromium"
+webgui 			= "google-chrome-stable"
 webcli 			= terminal.." -e links2"
 ftpgui 			= "filezilla"
 torrent 		= "transmission-gtk"
