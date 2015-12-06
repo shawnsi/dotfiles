@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Start our composite manager prior to setting BG
+#xcompmgr -cf &
+# Set the BG
+#feh --no-xinerama --bg-fill /path/to/image.png
+
+# Lock the damn screen
+xscreensaver-command --locak
