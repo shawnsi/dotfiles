@@ -26,4 +26,4 @@ HASH="#"
 
 # Setup a git enabled prompt
 git_function="__git_ps1 %s"
-export PS1="\[$COLOR_LIGHTGREEN\]$HASH \[$COLOR_LIGHTCYAN\]\u\[$COLOR_RESET\]:\[$COLOR_LIGHTBLUE\]\w \[$COLOR_LIGHTMAGENTA\]\n(\$(${git_function}))\[$COLOR_RESET\] \$ "
+export PS1="\[$COLOR_LIGHTGREEN\]$HASH \[$COLOR_LIGHTCYAN\]\u@\h\[$COLOR_RESET\]:\[$COLOR_LIGHTBLUE\]\w \[$COLOR_LIGHTMAGENTA\]\n(\$(${git_function}))\[$COLOR_RESET\] \$ "
