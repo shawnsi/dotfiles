@@ -96,7 +96,6 @@ set shortmess+=I
 
 " syntax highlighting and colors
 syntax on
-colorscheme sourcerer
 filetype off
 
 " stop unnecessary rendering
@@ -116,7 +115,7 @@ set foldminlines=99
 set nowrap
 
 " highlight column
-set cursorcolumn
+" set cursorcolumn
 
 " ┏━┓╻  ╻ ╻┏━╸╻┏┓╻   ┏━┓╺┳╸╻ ╻┏━╸┏━╸
 " ┣━┛┃  ┃ ┃┃╺┓┃┃┗┫   ┗━┓ ┃ ┃ ┃┣╸ ┣╸ 
@@ -128,7 +127,7 @@ if 1 " boolean for plugin loading
   set rtp+=~/.vim/bundle/Vundle.vim
   call vundle#begin()
   Plugin 'gmarik/Vundle.vim'
-  Plugin 'Valloric/YouCompleteMe'
+  "Plugin 'Valloric/YouCompleteMe'
   Plugin 'scrooloose/syntastic'
   Plugin 'airblade/vim-gitgutter'
   Plugin 'isa/vim-matchit'
@@ -252,3 +251,5 @@ if 1 " boolean for plugin loading
     call lightline#update()
   endfunction
 endif
+
+set bg=dark
