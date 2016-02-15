@@ -18,9 +18,6 @@
 " must be first, because it changes other options as a side effect
 set nocompatible
 
-" paste without auto indentation
-set paste
-
 " hide buffers, not close them
 set hidden
 
