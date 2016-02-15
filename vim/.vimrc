@@ -127,15 +127,10 @@ if 1 " boolean for plugin loading
   set rtp+=~/.vim/bundle/Vundle.vim
   call vundle#begin()
   Plugin 'gmarik/Vundle.vim'
-  "Plugin 'Valloric/YouCompleteMe'
-  Plugin 'scrooloose/syntastic'
   Plugin 'airblade/vim-gitgutter'
-  Plugin 'isa/vim-matchit'
-  Plugin 'shawncplus/phpcomplete.vim'
-  Plugin 'mustache/vim-mustache-handlebars'
-  Plugin 'rking/ag.vim'
   Plugin 'itchyny/lightline.vim'
   Plugin 'tpope/vim-fugitive'
+  Plugin 'pearofducks/ansible-vim'
   call vundle#end()
   filetype plugin indent on
 
