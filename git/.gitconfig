@@ -12,3 +12,5 @@
   co = checkout
 [color]
 	ui = auto
+[push]
+	default = simple
