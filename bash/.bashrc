@@ -33,3 +33,6 @@ function post {
 function get {
 	curl -s "$1" | gpg --batch --quiet --armor --decrypt -
 }
+
+# Prompt to update arch linux once each day
+[ -f ~/.update/$(date +%F) ] || (mkdir -p ~/.update; rm -f ~/.update/*; touch ~/.update/$(date +%F); sudo pacman -Syuq)
