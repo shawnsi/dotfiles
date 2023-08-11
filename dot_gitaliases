@@ -1,0 +1,12 @@
+[alias]
+  ane = commit --amend --no-edit
+  co = checkout
+  count   = !git shortlog -sn
+  fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset %C(yellow)%G?%Creset' --abbrev-commit
+  please = push --force-with-lease
+  squash = commit --squash=HEAD
+  staaash = stash --all
+  staash = stash --include-untracked
+  stsh = stash --keep-index
+  up = pull --rebase --autostash

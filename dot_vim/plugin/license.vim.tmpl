@@ -1,0 +1,10 @@
+" Configure antoyo/vim-licenses
+let g:licenses_default_commands = ['gpl', 'mit']
+let g:licenses_authors_name = 'Shawn Siefkas <{{ .email }}>'
+
+{{- if eq .environment "work" }}
+let g:licenses_copyright_holders_name = '{{ .employer }}'
+{{- else }}
+let g:licenses_copyright_holders_name = 'Shawn Siefkas <{{ .email }}>'
+{{- end }}
+" vim: ft=vim
