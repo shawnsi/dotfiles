@@ -4,14 +4,12 @@
 [user]
   name = Shawn Siefkas
   email = {{ .email }}
-  signingkey = {{ .gpgkey }}
 
 [include]
   path = ~/.gitaliases
 
 [push]
   default = simple
-  gpgSign = if-asked
   autoSetupRemote = true
 
 [init]
@@ -24,14 +22,8 @@
   branch = auto
   ui = true
 
-[commit]
-  gpgsign = true
-
 [color]
   ui = true
-
-[gpg]
-  program = gpg
 
 [log]
   date = iso-strict
@@ -40,10 +32,6 @@
   lineNumber = true
   extendedRegexp = true
   fallbackToNoIdex = true
-
-[tag]
-  forceSignAnnotated = true
-  gpgSign = true
 
 [help]
   autocorrect = 1
